@@ -1,29 +1,29 @@
 /* Estilo para la sección principal */
 .main-section {
-  background-image: url('images/pngtree-polylinear-texture-abstract-futuristic-network-shapes-in-a-high-tech-hud-image_13892943.png'); /* Cambia esto por la URL de la imagen que te guste */
+  background-image: url('images/pngtree-polylinear-texture-abstract-futuristic-network-shapes-in-a-high-tech-hud-image_13892943.png');
   background-size: cover;
   background-position: center;
-  color: white; /* Cambié el color de la letra a blanco */
-  height: 100vh; /* Esto hace que la imagen ocupe toda la pantalla */
+  color: white;
+  height: 100vh;
   display: flex;
-  flex-direction: column; /* Organiza los elementos en columna */
-  justify-content: center; /* Centra todo el contenido verticalmente */
-  align-items: center; /* Centra todo el contenido horizontalmente */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 0;
-  margin-bottom: 500px; /* Añade espacio entre la imagen y la siguiente sección */
+  margin-bottom: 500px;
 }
 
 .main-section h2 {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  margin-bottom: 10px;
 }
 
 .main-section p {
   font-size: 1.5rem;
   line-height: 1.8;
-  margin-bottom: 20px; /* Espacio entre el párrafo y el botón */
+  margin-bottom: 20px;
 }
 
 .main-section .btn-explore {
@@ -42,10 +42,10 @@
 
 /* Espacio debajo de la imagen */
 .main-section + .container {
-  margin-top: 100px; /* Ajusta el espacio entre la imagen y la siguiente sección */
+  margin-top: 100px;
 }
 
-/* General styles for the page */
+/* Estilo global */
 body {
   font-family: 'Jost', sans-serif;
   letter-spacing: 0.03rem;
@@ -55,12 +55,12 @@ body {
 h2 {
   font-family: 'Marcellus', serif;
   font-weight: 700;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 p {
   font-size: 1.1rem;
-  color: white;
+  color: rgb(4, 4, 4);
   line-height: 1.6;
 }
 
@@ -100,7 +100,7 @@ p {
   margin-right: 20px;
 }
 
-/* New Collection Section */
+/* Sección de productos */
 .container h2 {
   font-family: 'Marcellus', serif;
   font-weight: 700;
@@ -108,14 +108,13 @@ p {
 }
 
 .container {
-  margin-bottom: 500px; /* Añadir margen inferior de 500px a la sección de la colección */
-
+  margin-bottom: 500px;
 }
 
 /* Carousel images */
 .carousel-item img {
   object-fit: cover;
-  height: 250px; /* Adjust the height as per your preference */
+  height: 250px;
 }
 
 form .btn-outline-success {
@@ -129,95 +128,90 @@ form .btn-outline-success:hover {
   border-color: #2988c7;
 }
 
-/* General styles for the page */
-body {
-  font-family: 'Jost';
-}
-.square-icon {
-  width: 100px; /* Tamaño del icono */
-  height: 85px; /* Mantener la imagen cuadrada */
-  object-fit: contain; /* Asegura que la imagen se ajuste dentro del área */
-}
-/* Estilo para la sección de Customer Reviews */
+/* Sección de Customer Reviews */
 section.customer-reviews {
   padding: 30px 0;
-  margin-bottom: 50px; /* Añadir margen inferior de 500px */
-  min-height: 600px; /* Asegura que la sección tenga suficiente altura */
+  margin-bottom: 50px;
+  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+  flex-wrap: wrap;
 }
 
-/* Estilo para las tarjetas de reseñas */
 .review-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #2988c7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(20, 19, 19, 0.1);
   margin-bottom: 20px;
   text-align: center;
-  width: 100%; /* Esto asegura que las tarjetas no salgan del contenedor */
-  max-width: 300px; /* Limita el tamaño de las tarjetas */
+  width: 100%;
+  max-width: 600px;
+  color: rgb(0, 0, 0);
 }
 
-/* Espaciado entre las tarjetas */
 section.customer-reviews .row {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Asegura que las tarjetas se ajusten en pantallas pequeñas */
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-/* Video Section */
+.btn-explore {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilo para la sección de Video */
 section.video-section {
-  margin-bottom: 500px; /* Añadir margen inferior de 500px a la sección de video */
+  margin-bottom: 500px;
 }
 
-/* Trusted Partners Section */
+/* Estilo para Trusted Partners */
 section.trusted-partners {
-  margin-bottom: 500px; /* Añadir margen inferior de 500px a la sección de partners */
+  margin-bottom: 500px;
 }
 
-/* Estilo para la sección de Contact */
+/* Estilo para Contacto */
 #contact.impar {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: black; /* Cambié el color de la letra a blanco */
-  height: auto; /* Ajusta la altura automáticamente */
+  color: black;
+  height: auto;
   display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  padding: 50px 20px; /* Espaciado alrededor de la sección */
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
   text-align: center;
   margin-bottom: 300px;
 }
 
 /* Formulario de contacto */
 form {
- 
+  background-color: #3da9fc;
   width: 100%;
-  max-width: 1000px; /* Limita el tamaño del formulario */
-  margin: 0 auto; /* Centra el formulario */
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: grid;
   row-gap: 15px;
   grid-template-areas:
     "fila11 fila12 fila12 fila12 fila12 fila12"
     "fila21 fila22 fila22 fila22 fila22 fila22"
-    ". . enviar cancelar . .";
+    ". . enviar . . .";
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-/* Estilo para las etiquetas y campos */
 form label {
   font-size: 1rem;
-  color: #333; /* Color de texto */
+  color: #333;
 }
 
 form input,
@@ -230,14 +224,9 @@ form textarea {
   color: #333;
 }
 
-form textarea {
-  height: 50px; /* Ajusta la altura del campo de texto */
- 
-}
-
 form button {
-  background-color: #3da9fc; /* Color azul como el navbar */
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 10px 50px;
   font-size: 1rem;
   border-radius: 5px;
@@ -248,20 +237,10 @@ form button {
 }
 
 form button:hover {
-  background-color: #2988c7; /* Color más oscuro al pasar el cursor */
+  background-color: #2988c7;
 }
 
-/* Botón de cancelar con fondo rojo */
-form button[type="reset"] {
-  background-color: #2988c7; /* Rojo */
-  margin-top: 10px;
-}
-
-form button[type="reset"]:hover {
-  background-color: #2988c7; /* Cambio de color al pasar el cursor */
-}
-
-/* Footer */
+/* Estilo para el Footer */
 footer {
   background-color: #333;
   padding: 40px 0;
@@ -275,64 +254,81 @@ footer a {
 footer a:hover {
   color: #3da9fc;
 }
-/* Sección de productos combinada */
+
+/* Estilos adicionales para las secciones combinadas */
 .container #products .row {
-  margin-bottom: 60px; /* Agrega más separación entre las filas */
+  margin-bottom: 60px;
 }
 
-/* Estilo para la sección de Customer Reviews */
-section.customer-reviews {
-  padding: 30px 0;
-  margin-bottom: 50px; /* Añadir margen inferior de 500px */
-  min-height: 600px; /* Asegura que la sección tenga suficiente altura */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
+/* Estilo para el Navbar en vista móvil (vertical) */
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: #3da9fc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+  }
 }
 
-/* Estilo para las tarjetas de reseñas */
-.review-card {
-  background-color: #2988c7;
-  padding: 30x , 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(20, 19, 19, 0.1);
-  margin-bottom: 20px;
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
-  color: rgb(0, 0, 0); /* Cambié el color de las letras a negro */
+/* Animación de shake para el formulario */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
 }
 
-/* Espaciado entre las tarjetas */
-section.customer-reviews .row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; /* Asegura que las tarjetas se ajusten en pantallas pequeñas */
-  margin-top: 30px;
+.shake {
+  animation: shake 0.5s ease;
+}
+/* Ajuste de las imágenes en la sección Book an Appointment y Free Global Returns */
+.square-icon {
+  width: 100px; /* Tamaño del icono */
+  height: 85px; /* Mantener la imagen cuadrada */
+  object-fit: contain; /* Asegura que la imagen se ajuste dentro del área */
 }
 
-/* Ajuste de los botones */
-.btn-explore {
-  display: block;
-  margin: 20px auto;
+/* Cambiar color de texto a blanco en "Compuripley Tech" y secciones abajo */
+h2 {
+  color: white; /* Hacer que los textos sean blancos */
 }
 
-/* Estilo para las imágenes en el carousel */
-.carousel-item img {
-  object-fit: cover;
-  height: 250px;
+/* Para el título de la sección de "Book an Appointment" */
+#contact {
+  color: rgb(0, 0, 0);
 }
 
-/* Ajustes adicionales */
-.section-dell {
-  margin-bottom: 60px; /* Aumentamos la separación entre Dell y HP */
+/* Asegurar que las secciones debajo de "Compuripley Tech" tengan texto blanco */
+#products h2,
+#trusted-partners h3,
+#video h3,
+#customer-reviews h3 {
+  color: rgb(0, 0, 0); /* Establecer color blanco en los títulos de las secciones */
 }
 
-.section-hp {
-  margin-bottom: 60px; /* Aumentamos la separación entre Dell y HP */
+/* Para las imágenes de los íconos en Book An Appointment y Free Global Returns */
+#contact .square-icon {
+  width: 120px;  /* Ajustar el tamaño de las imágenes */
+  height: 120px; /* Mantener las proporciones adecuadas */
+  object-fit: contain;
 }
-.product-description {
-  color: black;
-}
+
+
