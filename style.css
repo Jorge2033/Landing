@@ -49,7 +49,7 @@
 body {
   font-family: 'Jost', sans-serif;
   letter-spacing: 0.03rem;
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
 h2 {
@@ -141,12 +141,13 @@ body {
 /* Estilo para la sección de Customer Reviews */
 section.customer-reviews {
   padding: 30px 0;
-  margin-bottom: 500px; /* Añadir margen inferior de 500px */
-  min-height: auto; /* Asegura que la sección tenga suficiente altura */
+  margin-bottom: 50px; /* Añadir margen inferior de 500px */
+  min-height: 600px; /* Asegura que la sección tenga suficiente altura */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 /* Estilo para las tarjetas de reseñas */
@@ -178,23 +179,88 @@ section.trusted-partners {
   margin-bottom: 500px; /* Añadir margen inferior de 500px a la sección de partners */
 }
 
+/* Estilo para la sección de Contact */
+#contact.impar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black; /* Cambié el color de la letra a blanco */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 50px 20px; /* Espaciado alrededor de la sección */
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+/* Formulario de contacto */
 form {
+ 
   width: 100%;
-  margin-top: 30px;
-  border: 1px solid black ;
-  padding: 15px;
+  max-width: 1000px; /* Limita el tamaño del formulario */
+  margin: 0 auto; /* Centra el formulario */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
   display: grid;
   row-gap: 15px;
   grid-template-areas:
-                      "fila11 fila12 fila12 fila12 fila12 fila12"
-                      "fila21 fila22 fila22 fila22 fila22 fila22"
-                      ". . enviar cancelar . .";
-                      background-color: #FFFFFF;
-                      background-image: url("img/letter-mail-email-doodle-seamless-pattern-good-for-background-backdrop-and-wallpaper-vector.jpg");
-                      background-attachment: fixed;
-                      background-repeat: no-repeat;
-                      background-size: cover;
+    "fila11 fila12 fila12 fila12 fila12 fila12"
+    "fila21 fila22 fila22 fila22 fila22 fila22"
+    ". . enviar cancelar . .";
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
+
+/* Estilo para las etiquetas y campos */
+form label {
+  font-size: 1rem;
+  color: #333; /* Color de texto */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+}
+
+form textarea {
+  height: 50px; /* Ajusta la altura del campo de texto */
+ 
+}
+
+form button {
+  background-color: #3da9fc; /* Color azul como el navbar */
+  color: white;
+  padding: 10px 50px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10%;
+}
+
+form button:hover {
+  background-color: #2988c7; /* Color más oscuro al pasar el cursor */
+}
+
+/* Botón de cancelar con fondo rojo */
+form button[type="reset"] {
+  background-color: #2988c7; /* Rojo */
+  margin-top: 10px;
+}
+
+form button[type="reset"]:hover {
+  background-color: #2988c7; /* Cambio de color al pasar el cursor */
+}
+
 /* Footer */
 footer {
   background-color: #333;
@@ -208,4 +274,65 @@ footer a {
 
 footer a:hover {
   color: #3da9fc;
+}
+/* Sección de productos combinada */
+.container #products .row {
+  margin-bottom: 60px; /* Agrega más separación entre las filas */
+}
+
+/* Estilo para la sección de Customer Reviews */
+section.customer-reviews {
+  padding: 30px 0;
+  margin-bottom: 50px; /* Añadir margen inferior de 500px */
+  min-height: 600px; /* Asegura que la sección tenga suficiente altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* Estilo para las tarjetas de reseñas */
+.review-card {
+  background-color: #2988c7;
+  padding: 30x , 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(20, 19, 19, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  color: rgb(0, 0, 0); /* Cambié el color de las letras a negro */
+}
+
+/* Espaciado entre las tarjetas */
+section.customer-reviews .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Asegura que las tarjetas se ajusten en pantallas pequeñas */
+  margin-top: 30px;
+}
+
+/* Ajuste de los botones */
+.btn-explore {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilo para las imágenes en el carousel */
+.carousel-item img {
+  object-fit: cover;
+  height: 250px;
+}
+
+/* Ajustes adicionales */
+.section-dell {
+  margin-bottom: 60px; /* Aumentamos la separación entre Dell y HP */
+}
+
+.section-hp {
+  margin-bottom: 60px; /* Aumentamos la separación entre Dell y HP */
+}
+.product-description {
+  color: black;
 }
