@@ -303,9 +303,11 @@ h2 {
   
 }
 .carousel-item img {
-  object-fit: cover;
-  height: 250px;
+  object-fit: contain;
+  height: 250px; /* Puedes ajustar esta altura según sea necesario */
+  width: 100%;   /* Asegura que ocupe todo el ancho */
 }
+
 #video {
   background-color: #3da9fc; /* Fondo azul */
   display:block;
@@ -465,36 +467,34 @@ margin-top: 100px;
 }
 
 
-@media only screen and (max-width: 950px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(137, 204, 241, 0.2);
-    backdrop-filter: blur(10px);
-    padding: 10px 20px;
+@media (max-width: 768px) {
+  /* Ajustar el formulario para pantallas móviles */
+  form {
+    padding: 20px;
+    font-size: 0.9rem;
   }
 
-  .navbar-toggler {
-    display: block;
-    z-index: 100;
+  /* Asegurarse de que las imágenes del carrusel sean más pequeñas */
+  .carousel-item img {
+    height: 200px;
   }
 
-  .navbar-collapse {
-    background-color: rgba(137, 204, 241, 0.9);
-    text-align: center;
+  /* Cambiar los botones para que se adapten al tamaño móvil */
+  .btn-explore {
+    padding: 8px 20px;
+    font-size: 0.9rem;
   }
 
-  .nav-link {
-    color: #0B516B;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px;
+  /* Reorganizar los productos para que ocupen toda la fila */
+  .container #products .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
-  .nav-link:hover {
-    color: #065a82;
+  /* Reducir el tamaño de los títulos y márgenes */
+  h2, h3 {
+    font-size: 1.5rem;
   }
 }
 
