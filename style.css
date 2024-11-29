@@ -467,7 +467,7 @@ margin-top: 100px;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 967px) {
   /* Ajustar el formulario para pantallas móviles */
   form {
     padding: 20px;

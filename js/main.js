@@ -1,24 +1,23 @@
-// Main JavaScript for the page
+
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     const emailInput = document.querySelector('#email');
     const reasonInput = document.querySelector('#reason');
 
-    // Shake animation function
+    
     const shakeForm = () => {
         form.classList.add('shake');
         setTimeout(() => {
             form.classList.remove('shake');
-        }, 500); // Duration of shake effect
+        }, 500); 
     };
 
-    // Add an event listener for form submission
     form.addEventListener('submit', async function (event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
-        // Validate form
+        
         if (!emailInput.value || !reasonInput.value) {
-            shakeForm(); // Trigger shake animation
+            shakeForm(); 
             return;
         }
 
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             reason: reasonInput.value,
         });
 
-        // POST request to simulate form submission
+        
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
                 method: "POST",
@@ -52,14 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // GET request to fetch and display products dynamically
+    
     const productsSection = document.getElementById('products');
     if (productsSection) {
         fetchProducts(productsSection);
     }
 });
 
-// Function to fetch and display products dynamically
 async function fetchProducts(productsSection) {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
